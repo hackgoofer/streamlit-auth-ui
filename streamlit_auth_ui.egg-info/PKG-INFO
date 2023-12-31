@@ -5,9 +5,6 @@ Summary: Thin wrapper for streamlit with Supabase auth-ui
 Home-page: https://github.com/hackgoofer/streamlit-auth-ui
 Author: Sasha Dog
 Author-email: hackgoofer@gmail.com
-License: UNKNOWN
-Description: UNKNOWN
-Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
