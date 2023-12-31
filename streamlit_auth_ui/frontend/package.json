@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev:css\" \"vite\"",
+    "dev": "concurrently \"npm run dev:css\" \"vite --host\"",
     "dev:css": "tailwindcss -w -i ./src/tailwind.css -o src/app.css",
     "build:example": "npm run build:css && tsc && vite build",
     "build:css": "tailwindcss -m -i ./src/tailwind.css -o src/app.css",
