@@ -7,6 +7,9 @@ import ToggleButton from './ToggleButton'
 import MenuIcon from './MenuIcon'
 import { Input } from './Input'
 import { Label } from './Label'
+import Markdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+
 
 import {
   Streamlit,
@@ -161,9 +164,7 @@ function App(props: ComponentProps) {
         <div className="col-span-12 md:col-span-5 lg:col-span-6">
           <div className="!max-w-md">
             <h3 className="text-2xl mb-8">{rightTitle}</h3>
-            <p className="text-scale-900 mt-0">
-              {rightDesc}
-            </p>
+             <Markdown remarkPlugins={[remarkGfm]}>{rightDesc}</Markdown>
             <div className="mb-4 pt-6 flex items-center space-x-2">
               <small>{rightFooter}</small>
             </div>
