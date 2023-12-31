@@ -1,6 +1,6 @@
 import { css } from '@stitches/core'
 import { generateClassNames } from '@supabase/auth-ui-shared'
-import { Appearance } from 'types'
+import { Appearance } from './types'
 
 const inputDefaultStyles = css({
   fontFamily: '$inputFontFamily',

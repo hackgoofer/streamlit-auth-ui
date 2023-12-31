@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 # the component, and True when we're ready to package and distribute it.
 # (This is, of course, optional - there are innumerable ways to manage your
 # release process.)
-_RELEASE = os.getenv("DEBUG", "").lower() != "streamlit_auth_ui"
+_RELEASE = os.getenv("DEBUG", "").lower() == False
 
 # Declare a Streamlit component. `declare_component` returns a function
 # that is used to create instances of the component. We're naming this
@@ -18,7 +18,6 @@ _RELEASE = os.getenv("DEBUG", "").lower() != "streamlit_auth_ui"
 # *only thing* you need to do to create the binding between Streamlit and
 # your component frontend. Everything else we do in this file is simply a
 # best practice.
-_RELEASE = False    
 if not _RELEASE:
     _component_func = components.declare_component(
         # We give the component a simple, descriptive name
@@ -33,7 +32,7 @@ else:
     # replace the `url` param with `path`, and point it to to the component's
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
-    build_dir = os.path.join(parent_dir, "frontend/build")
+    build_dir = os.path.join(parent_dir, "frontend/dist")
     _component_func = components.declare_component("streamlit_auth_ui", path=build_dir)
 
 
