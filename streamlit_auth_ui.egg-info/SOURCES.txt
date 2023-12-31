@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+streamlit_auth_ui/__init__.py
+streamlit_auth_ui.egg-info/PKG-INFO
+streamlit_auth_ui.egg-info/SOURCES.txt
+streamlit_auth_ui.egg-info/dependency_links.txt
+streamlit_auth_ui.egg-info/requires.txt
+streamlit_auth_ui.egg-info/top_level.txt

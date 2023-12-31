@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: streamlit-auth-ui
+Version: 0.0.1
+Summary: Thin wrapper for streamlit with Supabase auth-ui
+Home-page: https://github.com/hackgoofer/streamlit-auth-ui
+Author: Sasha Dog
+Author-email: hackgoofer@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
