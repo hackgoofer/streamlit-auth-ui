@@ -1,13 +1,13 @@
 import os
 from typing import Any, List, Mapping, Optional
-
+from dotenv import load_dotenv 
 import streamlit.components.v1 as components
 # Create a _RELEASE constant. We'll set this to False while we're developing
 # the component, and True when we're ready to package and distribute it.
 # (This is, of course, optional - there are innumerable ways to manage your
 # release process.)
 _RELEASE = os.getenv("RELEASE", "0") == "1"
-
+load_dotenv()
 # Declare a Streamlit component. `declare_component` returns a function
 # that is used to create instances of the component. We're naming this
 # function "_component_func", with an underscore prefix, because we don't want
@@ -90,3 +90,16 @@ def logout_button(url: Optional[str] = None, apiKey: Optional[str] = None) -> No
         mode="logout",
     )
     return session
+
+
+import streamlit as st
+
+def main():
+    st.write("## Example")
+    value = login_form()
+
+    st.write(value)
+
+
+if __name__ == "__main__":
+    main()
